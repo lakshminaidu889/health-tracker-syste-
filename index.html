@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Tracker System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌿 Health Tracker System</h1>
+    <p>Monitor your daily steps, calories, and water intake</p>
+  </header>
+
+  <main>
+    <section class="tracker">
+      <h2>Step Counter</h2>
+      <p>Steps Today: <span id="steps">0</span></p>
+      <button onclick="addSteps(500)">+500 Steps</button>
+      <button onclick="resetSteps()">Reset</button>
+    </section>
+
+    <section class="tracker">
+      <h2>Calorie Tracker</h2>
+      <p>Calories Consumed: <span id="calories">0</span> kcal</p>
+      <input type="number" id="calInput" placeholder="Add Calories" />
+      <button onclick="addCalories()">Add</button>
+      <button onclick="resetCalories()">Reset</button>
+    </section>
+
+    <section class="tracker">
+      <h2>Water Intake</h2>
+      <p>Water Drank: <span id="water">0</span> L</p>
+      <button onclick="addWater(0.25)">+250 ml</button>
+      <button onclick="resetWater()">Reset</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Health Tracker | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
